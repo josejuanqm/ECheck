@@ -73,12 +73,13 @@ class ViewController: NSViewController, NSOpenSavePanelDelegate {
             }
         } else {
             // User clicked on "Cancel"
+            sender?.isEnabled = true
             return
         }
     }
     
     @IBAction func open(_ sender: NSButton) {
-        open(sender)
+        self.open(sender: sender, fileName: nil)
     }
     
     override func viewDidDisappear() {

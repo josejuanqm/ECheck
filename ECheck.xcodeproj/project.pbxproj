@@ -342,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SZLW4F7Q34;
-				INFOPLIST_FILE = "EPUB Checker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ECheck/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "studio.quasar.EPUB-Check";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SZLW4F7Q34;
-				INFOPLIST_FILE = "EPUB Checker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ECheck/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "studio.quasar.EPUB-Check";
 				PRODUCT_NAME = "$(TARGET_NAME)";
