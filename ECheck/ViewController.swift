@@ -67,7 +67,7 @@ class ViewController: NSViewController, NSOpenSavePanelDelegate {
             if (result != "Failed to extract path") {
                 path.stringValue = result
                 
-                sender?.title = "Analize"
+                sender?.title = "Validate"
                 sender?.isEnabled = true
                 sender?.tag = 10
             }
