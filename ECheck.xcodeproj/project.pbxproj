@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1111AF3C1E35C35A0085EDE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111AF3B1E35C35A0085EDE8 /* AppDelegate.swift */; };
+		1111AF3E1E35C35A0085EDE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111AF3D1E35C35A0085EDE8 /* ViewController.swift */; };
+		1111AF401E35C35A0085EDE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1111AF3F1E35C35A0085EDE8 /* Assets.xcassets */; };
+		1111AF431E35C35A0085EDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1111AF411E35C35A0085EDE8 /* Main.storyboard */; };
+		1111AF4E1E35C35A0085EDE8 /* EPUB_CheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111AF4D1E35C35A0085EDE8 /* EPUB_CheckerTests.swift */; };
+		1111AF5C1E35C96B0085EDE8 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111AF5B1E35C96B0085EDE8 /* OutputView.swift */; };
+		1111AF961E35D0560085EDE8 /* epubcheck.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 1111AF941E35D0560085EDE8 /* epubcheck.jar */; };
+		1111AF971E35D0560085EDE8 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 1111AF951E35D0560085EDE8 /* lib */; };
+		1111AF981E35D05C0085EDE8 /* epubcheck.jar in Resources */ = {isa = PBXBuildFile; fileRef = 1111AF941E35D0560085EDE8 /* epubcheck.jar */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1111AF4A1E35C35A0085EDE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1111AF301E35C35A0085EDE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1111AF371E35C35A0085EDE8;
+			remoteInfo = "EPUB Checker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1111AF381E35C35A0085EDE8 /* ECheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1111AF3B1E35C35A0085EDE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1111AF3D1E35C35A0085EDE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1111AF3F1E35C35A0085EDE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1111AF421E35C35A0085EDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1111AF441E35C35A0085EDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1111AF491E35C35A0085EDE8 /* ECheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1111AF4D1E35C35A0085EDE8 /* EPUB_CheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPUB_CheckerTests.swift; sourceTree = "<group>"; };
+		1111AF4F1E35C35A0085EDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1111AF5B1E35C96B0085EDE8 /* OutputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
+		1111AF941E35D0560085EDE8 /* epubcheck.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = epubcheck.jar; sourceTree = "<group>"; };
+		1111AF951E35D0560085EDE8 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1111AF351E35C35A0085EDE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1111AF961E35D0560085EDE8 /* epubcheck.jar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1111AF461E35C35A0085EDE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1111AF2F1E35C35A0085EDE8 = {
+			isa = PBXGroup;
+			children = (
+				1111AF3A1E35C35A0085EDE8 /* ECheck */,
+				1111AF4C1E35C35A0085EDE8 /* ECheckTests */,
+				1111AF391E35C35A0085EDE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1111AF391E35C35A0085EDE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1111AF381E35C35A0085EDE8 /* ECheck.app */,
+				1111AF491E35C35A0085EDE8 /* ECheckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1111AF3A1E35C35A0085EDE8 /* ECheck */ = {
+			isa = PBXGroup;
+			children = (
+				1111AF3B1E35C35A0085EDE8 /* AppDelegate.swift */,
+				1111AF3D1E35C35A0085EDE8 /* ViewController.swift */,
+				1111AF3F1E35C35A0085EDE8 /* Assets.xcassets */,
+				1111AF411E35C35A0085EDE8 /* Main.storyboard */,
+				1111AF441E35C35A0085EDE8 /* Info.plist */,
+				1111AF5B1E35C96B0085EDE8 /* OutputView.swift */,
+				1111AF941E35D0560085EDE8 /* epubcheck.jar */,
+				1111AF951E35D0560085EDE8 /* lib */,
+			);
+			path = ECheck;
+			sourceTree = "<group>";
+		};
+		1111AF4C1E35C35A0085EDE8 /* ECheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				1111AF4D1E35C35A0085EDE8 /* EPUB_CheckerTests.swift */,
+				1111AF4F1E35C35A0085EDE8 /* Info.plist */,
+			);
+			path = ECheckTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1111AF371E35C35A0085EDE8 /* ECheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1111AF521E35C35A0085EDE8 /* Build configuration list for PBXNativeTarget "ECheck" */;
+			buildPhases = (
+				1111AF341E35C35A0085EDE8 /* Sources */,
+				1111AF351E35C35A0085EDE8 /* Frameworks */,
+				1111AF361E35C35A0085EDE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECheck;
+			productName = "EPUB Checker";
+			productReference = 1111AF381E35C35A0085EDE8 /* ECheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1111AF481E35C35A0085EDE8 /* ECheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1111AF551E35C35A0085EDE8 /* Build configuration list for PBXNativeTarget "ECheckTests" */;
+			buildPhases = (
+				1111AF451E35C35A0085EDE8 /* Sources */,
+				1111AF461E35C35A0085EDE8 /* Frameworks */,
+				1111AF471E35C35A0085EDE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1111AF4B1E35C35A0085EDE8 /* PBXTargetDependency */,
+			);
+			name = ECheckTests;
+			productName = "EPUB CheckerTests";
+			productReference = 1111AF491E35C35A0085EDE8 /* ECheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1111AF301E35C35A0085EDE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jose Quintero";
+				TargetAttributes = {
+					1111AF371E35C35A0085EDE8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SZLW4F7Q34;
+						ProvisioningStyle = Automatic;
+					};
+					1111AF481E35C35A0085EDE8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SZLW4F7Q34;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1111AF371E35C35A0085EDE8;
+					};
+				};
+			};
+			buildConfigurationList = 1111AF331E35C35A0085EDE8 /* Build configuration list for PBXProject "ECheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1111AF2F1E35C35A0085EDE8;
+			productRefGroup = 1111AF391E35C35A0085EDE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1111AF371E35C35A0085EDE8 /* ECheck */,
+				1111AF481E35C35A0085EDE8 /* ECheckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1111AF361E35C35A0085EDE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1111AF981E35D05C0085EDE8 /* epubcheck.jar in Resources */,
+				1111AF971E35D0560085EDE8 /* lib in Resources */,
+				1111AF401E35C35A0085EDE8 /* Assets.xcassets in Resources */,
+				1111AF431E35C35A0085EDE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1111AF471E35C35A0085EDE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1111AF341E35C35A0085EDE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1111AF3E1E35C35A0085EDE8 /* ViewController.swift in Sources */,
+				1111AF3C1E35C35A0085EDE8 /* AppDelegate.swift in Sources */,
+				1111AF5C1E35C96B0085EDE8 /* OutputView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1111AF451E35C35A0085EDE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1111AF4E1E35C35A0085EDE8 /* EPUB_CheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1111AF4B1E35C35A0085EDE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1111AF371E35C35A0085EDE8 /* ECheck */;
+			targetProxy = 1111AF4A1E35C35A0085EDE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1111AF411E35C35A0085EDE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1111AF421E35C35A0085EDE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1111AF501E35C35A0085EDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1111AF511E35C35A0085EDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		1111AF531E35C35A0085EDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SZLW4F7Q34;
+				INFOPLIST_FILE = "EPUB Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.quasar.EPUB-Check";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1111AF541E35C35A0085EDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SZLW4F7Q34;
+				INFOPLIST_FILE = "EPUB Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.quasar.EPUB-Check";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1111AF561E35C35A0085EDE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SZLW4F7Q34;
+				INFOPLIST_FILE = "EPUB CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.quasar.EPUB-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECheck.app/Contents/MacOS/ECheck";
+			};
+			name = Debug;
+		};
+		1111AF571E35C35A0085EDE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SZLW4F7Q34;
+				INFOPLIST_FILE = "EPUB CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.quasar.EPUB-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECheck.app/Contents/MacOS/ECheck";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1111AF331E35C35A0085EDE8 /* Build configuration list for PBXProject "ECheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1111AF501E35C35A0085EDE8 /* Debug */,
+				1111AF511E35C35A0085EDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1111AF521E35C35A0085EDE8 /* Build configuration list for PBXNativeTarget "ECheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1111AF531E35C35A0085EDE8 /* Debug */,
+				1111AF541E35C35A0085EDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1111AF551E35C35A0085EDE8 /* Build configuration list for PBXNativeTarget "ECheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1111AF561E35C35A0085EDE8 /* Debug */,
+				1111AF571E35C35A0085EDE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1111AF301E35C35A0085EDE8 /* Project object */;
+}

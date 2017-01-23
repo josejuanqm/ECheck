@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="ECheck" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="ECheck" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About ECheck" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Hide ECheck" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit ECheck" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="EPUB_Check" customModuleProvider="target"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="-115"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="ECheck" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="373" y="440" width="480" height="87"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="480" height="87"/>
+                        <value key="maxSize" type="size" width="480" height="87"/>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="157.5"/>
+        </scene>
+        <!--ECheck-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController title="ECheck" id="XfG-lQ-9wD" customClass="ViewController" customModule="EPUB_Check" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="87"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MYe-4B-77X">
+                                <rect key="frame" x="20" y="20" width="324" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="exJ-z6-aWv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Lw-IX-EC6">
+                                <rect key="frame" x="346" y="13" width="120" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="cAc-dM-pJo"/>
+                                    <constraint firstAttribute="height" constant="21" id="sq1-Ry-ZMt"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mgV-YH-SHB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="open:" target="XfG-lQ-9wD" id="CxB-t0-ZqQ"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-4r-SdZ">
+                                <rect key="frame" x="18" y="50" width="444" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Choose EPUB" id="SxI-wK-9oz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MYe-4B-77X" firstAttribute="top" secondItem="G9g-4r-SdZ" secondAttribute="bottom" constant="8" id="7Vi-wX-mC7"/>
+                            <constraint firstItem="9Lw-IX-EC6" firstAttribute="leading" secondItem="MYe-4B-77X" secondAttribute="trailing" constant="8" id="I35-t9-Npk"/>
+                            <constraint firstItem="G9g-4r-SdZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="PG4-NO-C8H"/>
+                            <constraint firstAttribute="trailing" secondItem="9Lw-IX-EC6" secondAttribute="trailing" constant="20" id="Wpx-HH-ea8"/>
+                            <constraint firstAttribute="trailing" secondItem="G9g-4r-SdZ" secondAttribute="trailing" constant="20" id="X0K-yx-QYq"/>
+                            <constraint firstItem="MYe-4B-77X" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="aT3-mi-16D"/>
+                            <constraint firstItem="9Lw-IX-EC6" firstAttribute="leading" secondItem="MYe-4B-77X" secondAttribute="trailing" constant="8" id="eTI-Iy-uds"/>
+                            <constraint firstItem="9Lw-IX-EC6" firstAttribute="top" secondItem="G9g-4r-SdZ" secondAttribute="bottom" constant="9" id="ima-kV-UWn"/>
+                            <constraint firstItem="G9g-4r-SdZ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="qcC-3W-fRM"/>
+                            <constraint firstItem="MYe-4B-77X" firstAttribute="top" secondItem="G9g-4r-SdZ" secondAttribute="bottom" constant="8" id="uuI-7B-06x"/>
+                            <constraint firstAttribute="bottom" secondItem="MYe-4B-77X" secondAttribute="bottom" constant="20" id="vrK-sd-D9g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="path" destination="MYe-4B-77X" id="kpv-rS-iqO"/>
+                        <segue destination="Pbz-Uy-B3F" kind="sheet" identifier="showOutput" id="HyZ-Xo-6sj"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="527.5"/>
+        </scene>
+        <!--Output View-->
+        <scene sceneID="Eja-uI-eVa">
+            <objects>
+                <viewController id="Pbz-Uy-B3F" customClass="OutputView" customModule="EPUB_Check" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="jXP-1X-NQq">
+                        <rect key="frame" x="0.0" y="0.0" width="516" height="326"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIW-2h-zsV">
+                                <rect key="frame" x="20" y="61" width="476" height="245"/>
+                                <clipView key="contentView" id="kLK-Bi-TMM">
+                                    <rect key="frame" x="1" y="1" width="474" height="243"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="kBW-Mz-qRz">
+                                            <rect key="frame" x="0.0" y="0.0" width="474" height="243"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="474" height="243"/>
+                                            <size key="maxSize" width="476" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="7uY-8a-iSW">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="puL-PG-YIA">
+                                    <rect key="frame" x="459" y="1" width="16" height="243"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u32-f2-EZR">
+                                <rect key="frame" x="14" y="13" width="488" height="32"/>
+                                <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V2C-rd-Bsa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dismissController:" target="Pbz-Uy-B3F" id="j1W-kY-3vc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="u32-f2-EZR" firstAttribute="top" secondItem="LIW-2h-zsV" secondAttribute="bottom" constant="20" id="16h-cX-gJ3"/>
+                            <constraint firstAttribute="bottom" secondItem="u32-f2-EZR" secondAttribute="bottom" constant="20" id="BFv-WT-CCy"/>
+                            <constraint firstItem="LIW-2h-zsV" firstAttribute="leading" secondItem="jXP-1X-NQq" secondAttribute="leading" constant="20" symbolic="YES" id="daA-FK-SKl"/>
+                            <constraint firstAttribute="trailing" secondItem="u32-f2-EZR" secondAttribute="trailing" constant="20" id="epS-4s-BRS"/>
+                            <constraint firstAttribute="trailing" secondItem="LIW-2h-zsV" secondAttribute="trailing" constant="20" symbolic="YES" id="h2I-uh-jIO"/>
+                            <constraint firstItem="LIW-2h-zsV" firstAttribute="top" secondItem="jXP-1X-NQq" secondAttribute="top" constant="20" symbolic="YES" id="jAA-fc-FXh"/>
+                            <constraint firstItem="u32-f2-EZR" firstAttribute="leading" secondItem="jXP-1X-NQq" secondAttribute="leading" constant="20" id="jNS-mP-KfK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="kBW-Mz-qRz" id="rXw-Jc-fCO"/>
+                    </connections>
+                </viewController>
+                <customObject id="WTL-rG-JVW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="832"/>
+        </scene>
+    </scenes>
+</document>
